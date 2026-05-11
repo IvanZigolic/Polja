@@ -11,7 +11,7 @@ public class ZadatakPolja {
         System.out.println();
         System.out.println("Unesene godine: ");
         for(int j=0; j<godine.length; j++){
-            System.out.print(" " +godine[j]);
+            System.out.println(" " +godine[j]);
         }
         System.out.println();
         System.out.println();
