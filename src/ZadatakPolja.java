@@ -16,10 +16,7 @@ public class ZadatakPolja {
         System.out.println();
         System.out.println();
         for (int z : godine){
-            if(z%4==0 && z%100!=0){
-                System.out.println("Broj " + z + " je prijestupna godina!" + "\n");
-            }
-            else if(z%400==0){
+            if(z%4==0 && z%100!=0 || z%400==0){
                 System.out.println("Broj " + z + " je prijestupna godina!" + "\n");
             }
         }
