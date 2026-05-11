@@ -5,23 +5,23 @@ public class ZadatakPolja {
         Scanner sc = new Scanner(System.in);
         int[] godine = new int[7];
         System.out.println("Unesite 7 godina");
-        for(int i=0; i<=6; i++){
+        for (int i=0; i<godine.length; i++){
             godine[i]=sc.nextInt();
         }
         System.out.println();
         System.out.println("Unesene godine: ");
-        for(int j=0; j<godine.length; j++){
-            System.out.println(" " +godine[j]);
+        for (int j : godine){
+            System.out.println(j);
         }
         System.out.println();
         System.out.println();
-        for(int z=0; z<godine.length; z++){
-            if(godine[z]%4==0 && godine[z]%100!=0){
-                System.out.println("Broj " + godine[z] + " je prijestupna godina!" + "\n");
+        for (int z : godine){
+            if(z%4==0 && z%100!=0){
+                System.out.println("Broj " + z + " je prijestupna godina!" + "\n");
             }
-            else if(godine[z]%400==0){
-                System.out.println("Broj " + godine[z] + " je prijestupna godina!" + "\n");
+            else if(z%400==0){
+                System.out.println("Broj " + z + " je prijestupna godina!" + "\n");
             }
+        }
         }
     }
-}
